@@ -1,0 +1,21 @@
+<template name="login">
+ {{#unless currentUser}}
+	  <form class="form-signin login">
+	    <h2 class="form-signin-heading">Please sign in</h2>
+	    <label for="inputUserName" class="sr-only">UserName</label>
+	    <input type="text" id="inputUserName" class="form-control" name="loginUserName" placeholder="UserName">
+	    <br>
+	    <!-- <label for="inputEmail" class="sr-only">Email address</label>
+	    <input type="email" id="inputEmail" class="form-control" name="loginEmail" placeholder="Email address" autofocus>
+	    <br> -->
+	    <label for="inputPassword" class="sr-only">Password</label>
+	    <input type="password" id="inputPassword" class="form-control" name="loginPassword" placeholder="Password">
+	    <div class="checkbox">
+	      <label>
+	        <input type="checkbox" value="remember-me"> Remember me
+	      </label>
+	    </div>
+	    <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+	  </form>
+	{{/unless}}
+</template>
